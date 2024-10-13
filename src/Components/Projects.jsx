@@ -23,14 +23,17 @@ const ProjectCard = ({
         active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
       } flex items-center justify-center min-w-[170px] 
       h-[420px] cursor-pointer card-shadow`}
-      onClick={() => handleClick(id)}>
+      onClick={() => handleClick(id)}
+    >
       <div
         className="absolute top-0 left-0 z-10 bg-jetLight 
-      h-full w-full opacity-[0.5] rounded-[24px]"></div>
+      h-full w-full opacity-[0.5] rounded-[24px]"
+      ></div>
 
       <img
         src={image}
         alt={name}
+        loading="lazy"  // Add lazy loading here
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
 
@@ -40,7 +43,8 @@ const ProjectCard = ({
             className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
         whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf tracking-[1px]
         absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none z-20">
+        leading-none z-20"
+          >
             {name}
           </h3>
         </div>
@@ -48,26 +52,30 @@ const ProjectCard = ({
         <>
           <div
             className="absolute bottom-0 p-8 justify-start w-full 
-            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
+            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20"
+          >
             <div className="absolute inset-0 flex justify-end m-3">
               <div
                 onClick={() => window.open(repo, '_blank')}
                 className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
                   flex justify-center items-center cursor-pointer
-                  sm:opacity-[0.9] opacity-[0.8]">
-                
+                  sm:opacity-[0.9] opacity-[0.8]"
+              >
+                {/* Icon or content for the button */}
               </div>
             </div>
 
             <h2
               className="font-bold sm:text-[32px] text-[24px] 
-              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]">
+              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
+            >
               {name}
             </h2>
             <p
               className="text-silver sm:text-[14px] text-[12px] 
               max-w-3xl sm:leading-[24px] leading-[18px]
-              font-poppins tracking-[1px]">
+              font-poppins tracking-[1px]"
+            >
               {description}
             </p>
             <button
@@ -89,8 +97,9 @@ const ProjectCard = ({
                 document
                   .querySelector('.btn-icon')
                   .setAttribute('src', pineapple);
-              }}>
-             
+              }}
+            >
+              {/* Button content */}
             </button>
           </div>
         </>
@@ -103,21 +112,20 @@ const Projects = () => {
   const [active, setActive] = useState('project-2');
 
   return (
-    <div className=" text-white bg-black">
-      <motion.div className='flex justify-center items-center text-zinc-50 text-3xl' variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadTextLight}`} >Our Services.</h2>
+    <div className="text-white bg-black">
+      <motion.div className="flex justify-center items-center text-zinc-50 text-3xl" variants={textVariant()}>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Our Services.</h2>
       </motion.div>
 
-      <div className="w-full flex">
-        
-      </div>
+      <div className="w-full flex"></div>
 
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto text-zinc-50  flex flex-col`}>
+        className={`${styles.innerWidth} mx-auto text-zinc-50 flex flex-col`}
+      >
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {projects.map((project, index) => (
             <ProjectCard
