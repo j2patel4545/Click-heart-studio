@@ -29,7 +29,7 @@ function Contect() {
 
   // Initialize EmailJS with your public key
   useEffect(() => {
-    init('2RmuWPDWRE_d1132K');
+    init('jtaQl53gnwVP8rLR5');
 
     const handleResize = () => {
       setIsMobile(window.innerWidth < 560);
@@ -54,8 +54,8 @@ function Contect() {
     e.preventDefault();
     setBtnText('Sending...');
 
-    const serviceID = 'default_service'; // Your service ID
-    const templateID = 'template_tr53gvh'; // Your template ID
+    const serviceID = 'service_xtzs16g'; // Your service ID
+    const templateID = 'template_vtcto8n'; // Your template ID
 
     sendForm(serviceID, templateID, e.target)
       .then(() => {
@@ -111,7 +111,7 @@ function Contect() {
                 id="from_name"
                 value={formData.from_name}
                 onChange={handleChange}
-                className="mt-1 block w-full border  border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-300"
+                className="mt-1 block w-full border text-black  border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-green-300"
                 required
               />
             </div>
@@ -123,7 +123,7 @@ function Contect() {
                 id="email_id"
                 value={formData.email_id}
                 onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-300"
+                className="mt-1 block w-full border border-gray-300 text-black rounded-md shadow-sm p-2 focus:ring focus:ring-green-300"
                 required
               />
             </div>
@@ -135,7 +135,7 @@ function Contect() {
                 id="contect_no"
                 value={formData.contect_no}
                 onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-300"
+                className="mt-1 block w-full border border-gray-300 text-black rounded-md shadow-sm p-2 focus:ring focus:ring-green-300"
                 required
               />
             </div>
@@ -146,7 +146,7 @@ function Contect() {
                 id="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-1 block w-full border border-gray-300 text-black rounded-md shadow-sm p-2 focus:ring focus:ring-blue-300"
+                className="mt-1 block w-full border border-gray-300 text-black rounded-md shadow-sm p-2 focus:ring focus:ring-green-300"
                 required
               />
             </div>
