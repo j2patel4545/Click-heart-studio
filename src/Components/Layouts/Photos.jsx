@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import photo1 from './homePhotos/photo1.webp'
-import photo2 from './homePhotos/photo2.webp'
-import photo3 from './homePhotos/photo3.webp'
-import photo4 from './homePhotos/photo4.webp'
-import photo5 from './homePhotos/photo5.webp'
-import photo6 from './homePhotos/photo6.webp'
-import photo7 from './homePhotos/photo7.webp'
-import photo8 from './homePhotos/photo8.webp'
-import photo9 from './homePhotos/photo9.webp'
-import photo10 from './homePhotos/photo10.webp'
-import photo11 from './homePhotos/photo11.webp'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import photo1 from './homePhotos/photo1.webp';
+import photo2 from './homePhotos/photo2.webp';
+import photo3 from './homePhotos/photo3.webp';
+import photo4 from './homePhotos/photo4.webp';
+import photo5 from './homePhotos/photo5.webp';
+import photo6 from './homePhotos/photo6.webp';
+import photo7 from './homePhotos/photo7.webp';
+import photo8 from './homePhotos/photo8.webp';
+import photo9 from './homePhotos/photo9.webp';
+import photo10 from './homePhotos/photo10.webp';
+import photo11 from './homePhotos/photo11.webp';
 
 function Photos() {
   return (
@@ -27,10 +27,11 @@ function Photos() {
               transition={{ duration: 0.5 }}
             >
               {/* img_01 */}
-              <img
+              <LazyLoadImage
                 className="object-cover h-full"
                 src={photo1}
                 alt="img_01"
+                // Removed the effect prop
               />
             </motion.div>
             <motion.div
@@ -41,17 +42,20 @@ function Photos() {
             >
               <div className="flex flex-1 flex-col">
                 {/* img_02 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo9}
                   alt="img_02"
+                  // Removed the effect prop
                 />
               </div>
               <div className="hidden md:flex flex-1 flex-col">
                 {/* img_03 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo3}
+                  alt="img_03"
+                  // Removed the effect prop
                 />
               </div>
             </motion.div>
@@ -65,18 +69,20 @@ function Photos() {
             >
               <div className="flex flex-1 flex-col">
                 {/* img_04 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo4}
                   alt="img_04"
+                  // Removed the effect prop
                 />
               </div>
               <div className="hidden md:flex flex-1 flex-col">
                 {/* img_05 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo5}
                   alt="img_05"
+                  // Removed the effect prop
                 />
               </div>
             </motion.div>
@@ -87,10 +93,11 @@ function Photos() {
               transition={{ delay: 0.6, duration: 0.5 }}
             >
               {/* img_06 */}
-              <img
+              <LazyLoadImage
                 className="object-cover h-full"
                 src={photo6}
                 alt="img_06"
+                // Removed the effect prop
               />
             </motion.div>
           </div>
@@ -108,10 +115,11 @@ function Photos() {
               transition={{ delay: 0.8, duration: 0.5 }}
             >
               {/* img_01 */}
-              <img
+              <LazyLoadImage
                 className="object-cover h-full"
                 src={photo7}
                 alt="img_07"
+                // Removed the effect prop
               />
             </motion.div>
           </div>
@@ -124,34 +132,38 @@ function Photos() {
             >
               <div>
                 {/* img_02 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo8}
                   alt="img_08"
+                  // Removed the effect prop
                 />
               </div>
               <div>
                 {/* img_03 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo11}
                   alt="img_09"
+                  // Removed the effect prop
                 />
               </div>
               <div>
                 {/* img_04 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo2}
                   alt="img_10"
+                  // Removed the effect prop
                 />
               </div>
               <div>
                 {/* img_05 */}
-                <img
+                <LazyLoadImage
                   className="object-cover h-full"
                   src={photo10}
                   alt="img_11"
+                  // Removed the effect prop
                 />
               </div>
             </motion.div>
