@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'; // Import Link
 import { motion } from 'framer-motion';
 import Photos from './Layouts/Photos.jsx';
 import abc from './abc.mp4';
+import { TailSpin } from 'react-loader-spinner'; // Import the loading spinner
 
 function Home() {
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isLoading, setIsLoading] = useState(true); // Loading state
     const videoRef = useRef(null);
 
     const containerVariants = {
@@ -35,6 +37,11 @@ function Home() {
         if (videoRef.current) {
             videoRef.current.play();
         }
+    };
+
+    // Handle video loaded event
+    const handleVideoLoaded = () => {
+        setIsLoading(false); // Hide loader when video is loaded
     };
 
     return (
@@ -78,53 +85,61 @@ function Home() {
                                 variants={buttonVariants}
                             >
                                 <Link
-    to="/contact"  // Change href to "to" for Link
-    className="
-        inline-flex
-        items-center
-        justify-center
-        px-8
-        py-2
-        font-sans
-        text-base
-        font-semibold
-        transition-all
-        duration-200
-        border-2 border-transparent
-        rounded-full
-        sm:leading-8
-        bg-white
-        sm:text-lg
-        text-black
-        hover:bg-opacity-90
-        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-secondary
-    "
->
-    Get in touch
-</Link>
+                                    to="/contact"  // Change href to "to" for Link
+                                    className="
+                                        inline-flex
+                                        items-center
+                                        justify-center
+                                        px-8
+                                        py-2
+                                        font-sans
+                                        text-base
+                                        font-semibold
+                                        transition-all
+                                        duration-200
+                                        border-2 border-transparent
+                                        rounded-full
+                                        sm:leading-8
+                                        bg-white
+                                        sm:text-lg
+                                        text-black
+                                        hover:bg-opacity-90
+                                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-secondary
+                                    "
+                                >
+                                    Get in touch
+                                </Link>
                             </motion.div>
                         </motion.div>
                     </div>
                 </motion.div>
 
-                {/* <div className="relative max-w-5xl px-6 mx-auto mt-12 text-white -mb-8 pb-20 group sm:px-8 lg:px-12 sm:-mb-24 lg:-mb-36 xl:-mb-40">                          make it pb-20 only for desktop view do not change for mobile view */}
                 <div className="relative max-w-5xl px-6 mx-auto mt-12 text-white -mb-8 pb-0 lg:pb-20 group sm:px-8 lg:px-12 sm:-mb-24 lg:-mb-36 xl:-mb-40">
-
                     <motion.div
                         className="overflow-hidden rounded-md aspect-w-4 aspect-h-3 lg:aspect-w-16 lg:aspect-h-9"
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1 }}
                     >
-                        
                         <video
                             ref={videoRef}
                             className="object-cover w-full h-full transition-all duration-300 group-hover:opacity-80"
                             src={abc}
                             muted
                             loop
-                            controls={isPlaying}  
+                            controls={isPlaying}
+                            onCanPlay={handleVideoLoaded} // Set loading state when video can play
                         />
+                        {isLoading && ( // Show loading spinner
+                            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                                <TailSpin
+                                    height="80"
+                                    width="80"
+                                    color="#ffffff"
+                                    ariaLabel="loading"
+                                />
+                            </div>
+                        )}
                     </motion.div>
 
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
