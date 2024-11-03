@@ -11,40 +11,40 @@ import {
 } from '../assets';
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'Photographer',
+    company_name: 'asistent',
     icon: coverhunt,
     iconBg: '#333333',
     date: 'Aug 2021 - Feb 2022',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'freelancer photographers',
+    company_name: 'Self',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: ' from Mar-2022 ',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
+    title: 'photographer partnerships',
+    company_name: 'Unai',
     icon: kelhel,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: ' from May-2023',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Instablish Click Heart Studio',
+    company_name: 'Unai',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'from  Aug-2024',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'Weding',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: ' Pre Weding',
+    description: '"Capturing love, joy, and excitement, preserving precious pre-wedding memories forever.".',
     tags: [
       {
         name: 'react',
@@ -65,9 +65,9 @@ const projects = [
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Engagement',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'Celebrating love and commitment, an engagement marks the start of forever together.',
     tags: [
       {
         name: 'react',
@@ -88,8 +88,8 @@ const projects = [
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Baby Photoshoot',
+    description: 'Capturing tiny smiles, giggles, and wonder, creating memories of pure innocence forever.',
     tags: [
       {
         name: 'nextjs',
@@ -110,8 +110,8 @@ const projects = [
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Product Shoot',
+    description: `Showcasing product details, style, and quality, capturing its essence to attract and inspire.`,
     tags: [
       {
         name: 'nextjs',
@@ -132,9 +132,9 @@ const projects = [
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'Modeling & more...',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'Highlighting beauty, style, and personality, capturing unique moments that tell a story.',
     tags: [
       {
         name: 'nextjs',
