@@ -6,8 +6,8 @@ import RohitCirti from '../assets/Cirti/RohitCirti.png';
 import { FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 function About() {
-  const phoneNumber1 = "9106053831"; // Phone number to dial Rohit
-  const phoneNumber2 = "9106053831"; // Phone number to dial Jay
+  const phoneNumber1 = "9313151169"; // Phone number to dial Rohit
+  const phoneNumber2 = "9662233155"; // Phone number to dial Jay
 
   const textVariants = {
     hidden: { opacity: 0, y: 50 },  // Start below and invisible
@@ -159,7 +159,7 @@ function About() {
                 <div className="flex space-x-5 mt-4 text-3xl md:mt-0">
                   {/* Instagram Link */}
                   <a 
-                    href="https://www.instagram.com/j2keys" 
+                    href="https://www.instagram.com/mr_jay._55/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-pink-800 "
