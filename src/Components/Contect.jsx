@@ -91,9 +91,10 @@ function Contect() {
               </div>
               <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 className="font-bold text-gray-dark">EMAIL</h2>
-                <a href="mailto:your@email.com" className="text-teal-500 leading-relaxed">j2patel@email.com</a>
+                <a href="mailto:your@email.com" className="text-teal-500 leading-relaxed">clickheart.018@gmail.com
+</a>
                 <h2 className="font-bold text-gray-dark mt-4">PHONE</h2>
-                <a href="tel:123-456-7890" className="leading-relaxed">+91 9106053831</a>
+                <a href="tel:123-456-7890" className="leading-relaxed">+91  9313151169</a>
               </div>
             </div>
           )}
