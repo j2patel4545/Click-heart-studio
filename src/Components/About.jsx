@@ -106,7 +106,7 @@ function About() {
                 <div className="flex space-x-5 mt-4 text-3xl md:mt-0">
                   {/* Instagram Link */}
                   <a 
-                    href="https://www.instagram.com/j2keys" 
+                    href="https://www.instagram.com/_ro_hitt21/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-pink-800 "
