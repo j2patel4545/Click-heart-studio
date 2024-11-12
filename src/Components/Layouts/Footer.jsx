@@ -2,7 +2,7 @@ import React from 'react';
 import { FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
-  const phoneNumber = "9106053831"; // Phone number to dial
+  const phoneNumber = "9313151169"; // Phone number to dial
 
   return (
     <footer className="bg-black text-white py-10 px-5">
@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="flex space-x-5 mt-4 md:mt-0">
             {/* Instagram Link */}
             <a 
-              href="https://www.instagram.com/j2keys" 
+              href="https://www.instagram.com/clicks_heart_/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-gray-400"
