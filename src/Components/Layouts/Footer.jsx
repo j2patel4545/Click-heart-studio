@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand and Description */}
           <div className="col-span-1">
             <h2 className="font-serif text-2xl">
-              <span className="text-white font-bold">
+{/*               <span className="text-white font-bold"> */}
               <Link
                                 to="/"
                                 title="BakerStreet"
@@ -20,7 +20,7 @@ const Footer = () => {
                             >
                                 <img className="w-auto h-14" src={logo} alt="BakerStreet" />
                             </Link>
-              </span>
+{/*               </span> */}
             </h2>
             <p className="mt-4 text-gray-400">
               Creatively capturing special moments for your life. Discover our stunning portfolios.
