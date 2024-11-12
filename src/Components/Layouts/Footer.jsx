@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
+import logo from './logo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const phoneNumber = "9313151169"; // Phone number to dial
@@ -12,7 +14,13 @@ const Footer = () => {
           {/* Brand and Description */}
           <div className="col-span-1">
             <h2 className="font-serif text-2xl">
-              <span className="text-white font-bold">Click</span>STUDIO
+                <Link
+                                to="/"
+                                title="BakerStreet"
+                                className="inline-flex rounded-md focus:outline-none"
+                            >
+                                <img className="w-auto h-14" src={logo} alt="BakerStreet" />
+               </Link> 
             </h2>
             <p className="mt-4 text-gray-400">
               Creatively capturing special moments for your life. Discover our stunning portfolios.
