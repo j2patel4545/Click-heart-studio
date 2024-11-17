@@ -6,8 +6,8 @@ import RohitCirti from '../assets/Cirti/RohitCirti.png';
 import { FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 function About() {
-  const phoneNumber1 = "9313151169"; // Phone number to dial Rohit
-  const phoneNumber2 = "9662233155"; // Phone number to dial Jay
+  const phoneNumber1 = "9106053831"; // Phone number to dial Rohit
+  const phoneNumber2 = "9106053831"; // Phone number to dial Jay
 
   const textVariants = {
     hidden: { opacity: 0, y: 50 },  // Start below and invisible
@@ -106,7 +106,7 @@ function About() {
                 <div className="flex space-x-5 mt-4 text-3xl md:mt-0">
                   {/* Instagram Link */}
                   <a 
-                    href="https://www.instagram.com/_ro_hitt21/" 
+                    href="https://www.instagram.com/j2keys" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-pink-800 "
@@ -134,69 +134,74 @@ function About() {
             </ul>
           </div>
         </div>
-
-        <div className="container flex flex-wrap max-w-6xl px-4 mx-auto mt-16 md:flex-nowrap md:px-8 lg:px-16">
-          {/* Content */}
-          <div className="w-full md:w-1/2 md:pl-10">
-            <h2 className="text-2xl font-semibold text-black md:text-3xl">
-              jay Arvindbhai Halpati
-            </h2>
-            <p className="mt-4 text-gray-700 lg:text-lg">
-              Our professional team is dedicated to creating beautiful visuals that reflect your personality.
-            </p>
-            <ul className="mt-6 space-y-4 text-gray-600">
-              <li className="flex items-center">
-                <span className="w-6 h-6 text-green-300 mr-2">✓</span> Tailored Photo Sessions
-              </li>
-              <li className="flex items-center">
-                <span className="w-6 h-6 text-green-300 mr-2">✓</span> High-Quality Prints and Products
-              </li>
-              <li className="flex items-center">
-                <span className="w-6 h-6 text-green-300 mr-2">✓</span> Exceptional Customer Service
-              </li>
-              <li className="flex items-center">
-                <span className="w-6 h-6 text-green-300 mr-2">✓</span> 
-                <div className="flex space-x-5 mt-4 text-3xl md:mt-0">
-                  {/* Instagram Link */}
-                  <a 
-                    href="https://www.instagram.com/mr_jay._55/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-pink-800 "
-                  >
-                    <FaInstagram className="text-4xl" />
-                  </a>
-                  {/* WhatsApp Link */}
-                  <a 
-                    href={`https://wa.me/91${phoneNumber2}`} // WhatsApp link to the specified phone number
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-green-600"
-                  >
-                    <FaWhatsapp className="text-4xl" />
-                  </a>
-                  {/* Call Link */}
-                  <a 
-                    href={`tel:${phoneNumber2}`} 
-                    className="hover:text-blue-700 "
-                  >
-                    <FaPhone className="text-4xl" />
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          {/* Image */}
-          <div className="w-full border-8 border-black mb-12 md:mb-0 md:w-1/2">
-            <img 
-              src={jayCirti} 
-              alt="boost creativity" 
-              className="w-full max-w-md object-contain mx-auto md:max-w-none" 
-              loading="lazy" // Lazy loading added here
-            />
-          </div>
+    {/* <h2 className='text-black'>hello</h2> */}
+    <div className="container flex flex-wrap max-w-6xl px-4 mx-auto mt-16 md:flex-nowrap md:px-8 lg:px-16">
+  {/* Content First for Mobile */}
+  <div className="w-full md:w-1/2 md:pl-10 order-2 md:order-1">
+    <h2 className="text-2xl font-semibold text-black md:text-3xl">
+      Jay Arvindbhai Halpati
+    </h2>
+    <p className="mt-4 text-gray-700 lg:text-lg">
+      Our professional team is dedicated to creating beautiful visuals that reflect your personality.
+    </p>
+    <ul className="mt-6 space-y-4 text-gray-600">
+      <li className="flex items-center">
+        <span className="w-6 h-6 text-green-300 mr-2">✓</span> Tailored Photo Sessions
+      </li>
+      <li className="flex items-center">
+        <span className="w-6 h-6 text-green-300 mr-2">✓</span> High-Quality Prints and Products
+      </li>
+      <li className="flex items-center">
+        <span className="w-6 h-6 text-green-300 mr-2">✓</span> Exceptional Customer Service
+      </li>
+      <li className="flex items-center">
+        <span className="w-6 h-6 text-green-300 mr-2">✓</span> 
+        <div className="flex space-x-5 mt-4 text-3xl md:mt-0">
+          {/* Instagram Link */}
+          <a 
+            href="https://www.instagram.com/mr_jay._55/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-pink-800 "
+          >
+            <FaInstagram className="text-4xl" />
+          </a>
+          {/* WhatsApp Link */}
+          <a 
+            href={`https://wa.me/91${phoneNumber2}`} // WhatsApp link to the specified phone number
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-green-600"
+          >
+            <FaWhatsapp className="text-4xl" />
+          </a>
+          {/* Call Link */}
+          <a 
+            href={`tel:${phoneNumber2}`} 
+            className="hover:text-blue-700 "
+          >
+            <FaPhone className="text-4xl" />
+          </a>
         </div>
+      </li>
+    </ul>
+  </div>
+
+  {/* Image Last for Mobile */}
+  <div className="w-full border-8 border-black mb-12 md:mb-0 md:w-1/2 order-1 md:order-2">
+    <img 
+      src={jayCirti} 
+      alt="boost creativity" 
+      className="w-full max-w-md object-contain mx-auto md:max-w-none" 
+      loading="lazy" // Lazy loading added here
+    />
+  </div>
+</div>
+
+      
+        
       </section>
+      
     </div>
   );
 }
