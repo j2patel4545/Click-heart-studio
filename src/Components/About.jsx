@@ -7,7 +7,7 @@ import { FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 function About() {
   const phoneNumber1 = "93131 51169"; // Phone number to dial Rohit  +91 93131 51169
-  const phoneNumber2 = "93131 51169"; // Phone number to dial Jay
+  const phoneNumber2 = "9662233155"; // Phone number to dial Jay
 
   const textVariants = {
     hidden: { opacity: 0, y: 50 },  // Start below and invisible
@@ -159,7 +159,7 @@ function About() {
         <div className="flex space-x-5 mt-4 text-3xl md:mt-0">
           {/* Instagram Link */}
           <a 
-            href="https://www.instagram.com/_ro_hitt21/?hl=en" 
+            href="https://www.instagram.com/mr_jay._55/?hl=en" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-pink-800 "
